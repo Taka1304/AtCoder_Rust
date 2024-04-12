@@ -1,5 +1,5 @@
-mod abc190_a;
+mod abc190_b;
 
 fn main() {
-    abc190_a::main()
+    abc190_b::main()
 }
