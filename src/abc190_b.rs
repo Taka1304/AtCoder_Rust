@@ -8,11 +8,11 @@ pub fn main() {
     n: u8,
     s: u32,
     d: u32,
-    spells: [[u32; 2]; n],
+    spells: [(u32, u32); n],
   }
 
-  for spell in spells.iter() {
-    if spell[0] < s && spell[1] > d {
+  for &(x, y) in &spells {
+    if x < s && y > d {
       println!("Yes");
       return;
     }
