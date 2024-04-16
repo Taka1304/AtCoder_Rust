@@ -1,4 +1,5 @@
 mod goldbach_conjecture;
+
 use proconio::input;
 use std::time::Instant;
 

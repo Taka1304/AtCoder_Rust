@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    format:
+      glob: "*.rs"
+      run: cargo fmt --
+    update-index:
+      glob: "*.rs"
+      run: git update-index --again
