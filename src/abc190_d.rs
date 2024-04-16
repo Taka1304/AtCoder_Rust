@@ -7,26 +7,19 @@ pub fn main() {
   input! {
     n: usize,
   }
-
   let mut count = 0;
-  let a = n << 1; // 2N
-  
   let mut i = 1;
   // 約数全探索
-  while i * i <= a {
+  while i * i <= n * 2 {
     // 約数か
-    if a % i == 0 {
-      let j = a / i;
+    if n * 2 % i == 0 {
+      let j = n * 2 / i;
       // 偶奇が異なるか
-      if (a ^ i) & 1 == 1 {
+      if i % 2 == 1 || (j != i && j % 2 == 1) {
         count+=1
       }
-      // 重複確認
-      if j != i && (a ^ j) & 1 == 1 {
-        count += 1
-      }
     }
-    i += 1
+    i+=1
   }
-  println!("{}", count << 1);
+  println!("{}", count * 2);
 }
