@@ -4,6 +4,7 @@
   "editor.inlayHints.enabled": "off",
   "cSpell.words": [
     "goldbach",
+    "itertools",
     "proconio"
   ],
 }
