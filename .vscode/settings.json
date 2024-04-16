@@ -2,4 +2,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "rust-lang.rust-analyzer",
   "editor.inlayHints.enabled": "off",
+  "cSpell.words": [
+    "goldbach",
+    "proconio"
+  ],
 }
