@@ -14,7 +14,7 @@ fn main() {
   // 実行時間を計測
   let start = Instant::now();
 
-  let limit: u64 = 30;
+  let limit: u64 = 50;
   match which_conjecture {
     1 => {
       println!("Testing the Strong Goldbach Conjecture...");
@@ -27,7 +27,7 @@ fn main() {
     }
     2 => {
       println!("Testing the Weak Goldbach Conjecture...");
-      for n in (9..=limit).step_by(2) {
+      for n in (7..=limit).step_by(2) {
         if !goldbach_conjecture::weak_goldbach(n) {
           println!("Failed at {}", n);
           continue;
@@ -36,7 +36,7 @@ fn main() {
     }
     3 => {
       println!("Testing the Extended Goldbach Conjecture...");
-      for n in 8..=limit {
+      for n in 7..=limit {
         if !goldbach_conjecture::extended_goldbach(n) {
           println!("Failed at {}", n);
           continue;
