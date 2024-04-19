@@ -1,7 +1,7 @@
 mod abc348 {
-  pub mod b;
+  pub mod c;
 }
 
 fn main() {
-  abc348::b::main();
+  abc348::c::main();
 }
