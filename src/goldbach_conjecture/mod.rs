@@ -1,3 +1,5 @@
+// 課題でやったゴールドバッハ予想問題
+
 use itertools::Itertools;
 use primes::{PrimeSet, Sieve};
 
@@ -49,21 +51,28 @@ pub fn extended_goldbach(n: u64) -> bool {
   !result_triples.is_empty() || !result_quadruples.is_empty()
 }
 
+// main.rs
+//
 // use proconio::input;
 // use std::time::Instant;
 
+// mod goldbach_conjecture;
+
 // fn main() {
-//   println!("1: Strong Goldbach Conjecture");
-//   println!("2: Weak Goldbach Conjecture");
-//   println!("3: Extended Goldbach Conjecture");
+//   println!("1: Strong Goldbach Conjecture, 4..=limit");
+//   println!("2: Weak Goldbach Conjecture, 7..=limit");
+//   println!("3: Extended Goldbach Conjecture, 7..=limit");
+//   println!("4: Strong Goldbach Conjecture, limit");
+//   println!("5: Weak Goldbach Conjecture, limit");
+//   println!("6: Extended Goldbach Conjecture, limit");
 
 //   input! {
 //     which_conjecture: u64,
+//     limit: u64
 //   }
 //   // 実行時間を計測
 //   let start = Instant::now();
 
-//   let limit: u64 = 50;
 //   match which_conjecture {
 //     1 => {
 //       println!("Testing the Strong Goldbach Conjecture...");
@@ -90,6 +99,24 @@ pub fn extended_goldbach(n: u64) -> bool {
 //           println!("Failed at {}", n);
 //           continue;
 //         }
+//       }
+//     }
+//     4 => {
+//       println!("Testing the Strong Goldbach Conjecture...");
+//       if !goldbach_conjecture::strong_goldbach(limit) {
+//         println!("Failed at {}", limit);
+//       }
+//     }
+//     5 => {
+//       println!("Testing the Weak Goldbach Conjecture...");
+//       if !goldbach_conjecture::weak_goldbach(limit) {
+//         println!("Failed at {}", limit);
+//       }
+//     }
+//     6 => {
+//       println!("Testing the Extended Goldbach Conjecture...");
+//       if !goldbach_conjecture::extended_goldbach(limit) {
+//         println!("Failed at {}", limit);
 //       }
 //     }
 //     _ => println!("Invalid input!"),
