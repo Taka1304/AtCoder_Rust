@@ -1,9 +1,7 @@
-mod abc348 {
-  pub mod d;
+mod abc349 {
+  pub mod a;
 }
 
-mod flatten_list;
-
 fn main() {
-  flatten_list::main();
+  abc349::a::main();
 }
